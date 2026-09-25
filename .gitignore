@@ -1,0 +1,17 @@
+node_modules
+dist
+*.local
+.env
+.env.*
+.DS_Store
+Thumbs.db
+*.log
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Never publish the editable Word resume — only the PDF in public/resume/
+*.docx
+
+# Local editor/agent settings
+.claude/
