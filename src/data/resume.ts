@@ -38,7 +38,7 @@ export const heroFlow: { label: string; detail: string; icon: IconName; items?: 
     label: 'SAP BTP',
     detail: 'Platform, connectivity and operations',
     icon: 'cloudCog',
-    items: ['SAP Cloud Connector', 'SAP Cloud ALM', 'SAP BTP Mobile Services'],
+    items: ['SAP Cloud Connector', 'SAP Cloud ALM', 'SAP BTP Mobile Services', 'SAP Build', 'SAP Joule'],
   },
   { label: 'SAP HANA HA/DR & Backup', detail: 'SUSE Linux clusters · Failover · AzAcSnap', icon: 'databaseBackup' },
   { label: 'SAP Security & Identity', detail: 'SSO · SNC · SAP IAS · SAP ETD', icon: 'shieldCheck' },
@@ -930,6 +930,11 @@ export const strengths: { icon: IconName; title: string; text: string }[] = [
 
 /** Newest first. */
 export const certifications = [
+  {
+    title: 'SAP Certified Professional - Solution Architect - SAP BTP',
+    issuer: 'SAP',
+    year: '2025',
+  },
   {
     title: 'SAP Certified Technology Specialist - SAP S/4HANA Conversion and SAP System Upgrade',
     issuer: 'SAP',
