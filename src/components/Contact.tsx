@@ -8,7 +8,7 @@ export function Contact() {
       <div className="container">
         <div className="contact-inner" data-reveal>
           <p className="eyebrow">
-            <span className="eyebrow-index">10</span>Contact
+            <span className="eyebrow-index">11</span>Contact
           </p>
           <h2 id="contact-title">Let’s Connect</h2>
           <p className="section-intro">

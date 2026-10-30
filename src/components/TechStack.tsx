@@ -9,7 +9,7 @@ export function TechStack() {
   return (
     <Section
       id="technologies"
-      index="07"
+      index="08"
       eyebrow="Technology Ecosystem"
       title="Technologies & Tools I've Worked With"
       intro="Technologies and tools from my career, grouped by domain. Filter to focus on one area."

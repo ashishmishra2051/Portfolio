@@ -5,7 +5,7 @@ import { Section } from './Section'
 
 export function Strengths() {
   return (
-    <Section id="strengths" index="08" eyebrow="Professional Strengths" title="How I Work">
+    <Section id="strengths" index="09" eyebrow="Professional Strengths" title="How I Work">
       <ul className="strengths">
         {strengths.map((s, i) => (
           <li key={s.title} className="strength" data-reveal style={{ '--d': `${(i % 3) * 60}ms` } as CSSProperties}>

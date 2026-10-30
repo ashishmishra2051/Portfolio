@@ -291,7 +291,7 @@ export const experience: Job[] = [
       'SAP technology specialist supporting the SAP S/4HANA conversion and extending the landscape with SAP BTP, Cloud ALM and cloud security services.',
     highlights: [
       'S/4HANA conversion', 'BTP SSO', 'SAP Cloud Connector', 'SAML → OIDC', 'RunMyJobs integrations',
-      'BTP mobile apps', 'Cloud ALM', 'BTP ABAP', 'SAP ETD', 'HA / cluster troubleshooting',
+      'BTP mobile apps', 'Cloud ALM', 'SAP Joule', 'BTP ABAP', 'SAP ETD', 'HA / cluster troubleshooting',
     ],
     groups: [
       {
@@ -307,7 +307,7 @@ export const experience: Job[] = [
           'Set up SSO for SAP S/4HANA and ABAP systems through a BTP service, and SSO for Fiori using local user certificates with SAP Business Client.',
           'Moved the trust between SAP BTP and IAS from SAML to OIDC.',
           'Set up applications and services on SAP BTP, including IAS, SAP Build, SAP Joule and the BTP ABAP environment.',
-          'Build and maintain BTP mobile apps with SAP Build.',
+          'Use SAP Joule with SAP Build and SAP BTP Mobile Services to build and maintain BTP applications.',
           'Integrated Redwood RunMyJobs and other third-party applications through SAP BTP Integration Suite.',
         ],
       },
@@ -316,6 +316,7 @@ export const experience: Job[] = [
         items: [
           'Set up SAP Cloud Connector in a high-availability configuration.',
           'Set up Change Request Management and health monitoring of on-premises SAP systems in SAP Cloud ALM.',
+          'Use SAP Cloud ALM and Joule agents to create custom dashboards for monitoring SAP systems.',
           'Connected on-premises SAP systems to SAP Enterprise Threat Detection (ETD) Public Cloud.',
           'Resolved critical cluster and high-availability incidents on SAP and database servers.',
         ],
@@ -601,6 +602,53 @@ export const projects: {
 ]
 
 /* ------------------------------------------------------------------ */
+/* Applied AI                                                          */
+/* ------------------------------------------------------------------ */
+
+export const appliedAi: { intro: string; items: typeof projects } = {
+  intro:
+    'I build and learn with Claude and Claude Code, keep picking up new AI tools and skills, and bring them into my SAP work with security first.',
+  items: [
+    {
+      icon: 'code',
+      title: 'AI-Assisted Portfolio Web App',
+      context: '2026',
+      tech: ['Claude Code', 'React', 'TypeScript', 'Vite', 'GitHub Actions'],
+      description:
+        'This site: designed and shipped with Claude Code, with all content driven from one structured data file.',
+      points: [
+        'Automated CI/CD to GitHub Pages with GitHub Actions',
+        'Accessible (keyboard navigation, reduced-motion support) and responsive from phone to desktop',
+        'Traced a UI defect (content disappearing after a re-render) to its root cause, fixed it and verified the fix on desktop and mobile before release',
+      ],
+    },
+    {
+      icon: 'smartphone',
+      title: 'Apps for Everyday Use',
+      context: 'Ongoing',
+      tech: ['Claude Code', 'Skills & Plugins', 'Code Review', 'Security Review'],
+      description: 'Built and enhancing apps for everyday use, such as an expense tracker and a vehicle expense tracker.',
+      points: [
+        'Use Claude Code skills and plugins from build to deployment: design, code review, security review and release',
+        'Security is the first requirement, not an afterthought',
+      ],
+    },
+    {
+      icon: 'bot',
+      title: 'Claude in SAP BASIS & BTP Work',
+      context: 'Ongoing',
+      tech: ['Claude', 'Agentic Workflows', 'Prompt Design'],
+      description: 'Using Claude to work faster and learn continuously, with human review before anything reaches a system.',
+      points: [
+        'Ramp up on new SAP BTP services, analyze error logs during troubleshooting, and draft technical documentation and runbooks',
+        'Validate every output against SAP documentation and system behaviour before applying any change',
+        'Keep learning new AI tooling: agentic workflows, Claude Code skills and tool integrations, and effective prompt design',
+      ],
+    },
+  ],
+}
+
+/* ------------------------------------------------------------------ */
 /* Architecture visualization                                          */
 /* ------------------------------------------------------------------ */
 
@@ -849,6 +897,10 @@ export const technologyGroups: { id: string; icon: IconName; title: string; item
   {
     id: 'automation', icon: 'calendarClock', title: 'Automation',
     items: ['Redwood RunMyJobs', 'Batch job management', 'ChaRM', 'SAP TMS', 'SAINT / SPAM', 'SWPM', 'SAP Readiness Check', 'ATC'],
+  },
+  {
+    id: 'ai', icon: 'bot', title: 'AI & Dev Tools',
+    items: ['Python', 'Claude', 'Claude Code', 'SAP Joule', 'Prompt Design', 'Git / GitHub', 'GitHub Actions', 'React / TypeScript'],
   },
   {
     id: 'security', icon: 'shieldCheck', title: 'Security',

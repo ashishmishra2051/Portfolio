@@ -61,7 +61,7 @@ export function Architecture() {
   return (
     <Section
       id="architecture"
-      index="06"
+      index="07"
       eyebrow="Featured · Technical Architecture"
       title="The Enterprise SAP Stack I Work Across"
       intro="A conceptual map of the technologies in my experience, from end users to the SAP BASIS layer, Azure and SAP BTP. Hover over or select a component to see where I've worked with it."

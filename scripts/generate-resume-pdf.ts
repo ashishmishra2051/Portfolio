@@ -13,7 +13,7 @@ import { tmpdir } from 'node:os'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import {
-  awards, certifications, education, experience, expertise, profile,
+  appliedAi, awards, certifications, education, experience, expertise, profile,
 } from '../src/data/resume.ts'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -36,7 +36,7 @@ const summary = [
 const skills = [
   'BASIS Administration', 'SAP HANA Administration', 'SAP BTP', 'SAP Cloud Connector', 'Redwood RunMyJobs',
   'SAP Implementation', 'SAP S/4HANA', 'Microsoft Azure', 'SAP Cloud ALM', 'Communication', 'Problem Solving',
-  'Troubleshooting & Analysis',
+  'Troubleshooting & Analysis', 'Python', 'Claude Code',
 ]
 
 const html = `<!doctype html>
@@ -70,6 +70,9 @@ const html = `<!doctype html>
 
   <h2>Summary</h2>
   <ul>${summary.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
+
+  <h2>Applied AI: Building and Learning with Claude</h2>
+  ${appliedAi.items.map((p) => `<h3>${esc(p.title)}</h3><ul><li>${esc(p.description)}</li>${p.points.map((pt) => `<li>${esc(pt)}</li>`).join('')}</ul>`).join('')}
 
   <h2>Skills</h2>
   <p class="skills">${skills.map(esc).join(' • ')}</p>

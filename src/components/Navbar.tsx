@@ -11,6 +11,7 @@ const links = [
   { id: 'expertise', label: 'Expertise' },
   { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
+  { id: 'ai', label: 'Applied AI' },
   { id: 'architecture', label: 'Architecture' },
   { id: 'certifications', label: 'Certifications' },
   { id: 'contact', label: 'Contact' },
@@ -18,7 +19,7 @@ const links = [
 
 // Every section, so that sections without a nav link clear the highlight.
 const observed = [
-  'home', 'snapshot', 'about', 'btp', 'expertise', 'experience', 'projects', 'architecture',
+  'home', 'snapshot', 'about', 'btp', 'expertise', 'experience', 'projects', 'ai', 'architecture',
   'technologies', 'strengths', 'certifications', 'resume', 'contact',
 ]
 
@@ -40,7 +41,7 @@ export function Navbar() {
       if (e.key === 'Escape') setOpen(false)
     }
     const onResize = () => {
-      if (window.innerWidth > 1100) setOpen(false)
+      if (window.innerWidth > 1200) setOpen(false)
     }
     window.addEventListener('keydown', onKey)
     window.addEventListener('resize', onResize)

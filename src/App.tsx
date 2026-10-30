@@ -1,4 +1,5 @@
 import { About } from './components/About'
+import { AppliedAi } from './components/AppliedAi'
 import { Architecture } from './components/Architecture'
 import { BtpSpotlight } from './components/BtpSpotlight'
 import { Credentials } from './components/Credentials'
@@ -32,6 +33,7 @@ export default function App() {
         <Expertise />
         <Experience />
         <Projects />
+        <AppliedAi />
         <Architecture />
         <TechStack />
         <Strengths />

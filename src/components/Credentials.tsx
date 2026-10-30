@@ -70,7 +70,7 @@ export function Awards() {
 
 export function Credentials() {
   return (
-    <Section id="certifications" index="09" eyebrow="Credentials" title="Certifications, Education & Recognition">
+    <Section id="certifications" index="10" eyebrow="Credentials" title="Certifications, Education & Recognition">
       <div className="creds">
         <Certifications />
         <Education />
